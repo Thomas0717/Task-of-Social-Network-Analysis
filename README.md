@@ -14,11 +14,14 @@ BUPT 2019-2020 社会网络分析与算法研究 大作业
 
 本项目Python版本为Python3.6.8
 
+
 IDE：Pycharm 画图软件：Gephi
+
 
 需要MongoDB数据库，可视化软件可选NoSQL，同时便于导出数据
 
-python库：selenium Scrapy pymongo Pillow lxml pylab pandas
+
+python库：selenium Scrapy pymongo Pillow lxml matplotlab pandas
 
 **注：**
 使用Pycharm需要额外下载mongodb可视化插件，最新版本Pycharm可能不兼容可视化插件
@@ -45,5 +48,16 @@ Chrome/Firefox浏览器打开开发者模式
 用Pycharm打开sina工程文件夹
 
 在sina/spider/weibo_spider.py中 点击运行按钮（绿色三角）
+
+## 使用Python绘制数据分布图
+其中netAnalysis.py用于绘制分布图，横轴为属性，数轴为频率。
+
+netAnalysis2.py用于绘制每个用户的属性图或分布/关注的对比图。
+
+在pd.data_csv()函数中写入csv表格的路径和名称（csv表格的名称不能任取，一些名字会被读取错误）。表格共一列，第一行为标题，其余为数据。 feature字段为绘制图形的数据属性，如'fan_nums'，'follow_nums'等。若想绘制其他图形，只需更改feature字符串和读入的表格即可。
+
+
+
+
 
 
